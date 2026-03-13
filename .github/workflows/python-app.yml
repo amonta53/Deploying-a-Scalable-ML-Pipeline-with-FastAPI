@@ -1,6 +1,6 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-# Updated March 13, 2026
+# Updated March 13, 2026 to use the current maintained version and support the new runtime. This removes a warning.
 
 name: Python application
 
@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.10
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: "3.10"
     - name: Install dependencies
