@@ -46,8 +46,10 @@ test_size = 0.20
 random_state = 42
 
 # Split the dataset into training and test sets.
-# Optional enhancement, use K-fold cross validation instead of a train-test split.
-train, test = train_test_split(data, test_size=test_size, random_state=random_state)
+# Optional enhancement, use K-fold cross validation instead of a train-test
+#  split.
+train, test = train_test_split(
+    data, test_size=test_size, random_state=random_state)
 
 # DO NOT MODIFY
 cat_features = [
@@ -123,4 +125,5 @@ for col in cat_features:
 
         with open("slice_output.txt", "a") as f:
             print(f"{col}: {slicevalue}, Count: {count:,}", file=f)
-            print(f"Precision: {p:.4f} | Recall: {r:.4f} | F1: {fb:.4f}", file=f)
+            print(
+                f"Precision: {p:.4f} | Recall: {r:.4f} | F1: {fb:.4f}", file=f)

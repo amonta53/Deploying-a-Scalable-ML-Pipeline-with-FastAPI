@@ -75,7 +75,10 @@ TEST_DATA = pd.DataFrame(
             "Handlers-cleaners",
             "Handlers-cleaners",
         ],
-        "relationship": ["Not-in-family", "Husband", "Not-in-family", "Husband"],
+        "relationship": ["Not-in-family",
+                         "Husband",
+                         "Not-in-family",
+                         "Husband"],
         "race": ["White", "White", "White", "Black"],
         "sex": ["Male", "Male", "Male", "Male"],
         "capital-gain": [2174, 0, 0, 0],
@@ -234,7 +237,8 @@ def test_compute_model_metrics_expected_values():
     """
     Verify that precision, recall, and F1-score match expected values.
     """
-    precision, recall, fbeta = compute_model_metrics(TEST_ACTUALS, TEST_PREDICTIONS)
+    precision, recall, fbeta = compute_model_metrics(
+        TEST_ACTUALS, TEST_PREDICTIONS)
 
     assert round(precision, 3) == EXPECTED_PRECISION
     assert round(recall, 3) == EXPECTED_RECALL
