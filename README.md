@@ -76,29 +76,23 @@ These are handled programmatically during loading using skipinitialspace=True ra
 the raw dataset file.
 
 ## Project Structure
-repo/
-│
+Deploying-a-Scalable-ML-Pipeline-with-FastAPI/
 ├── data/
 │   └── census.csv
-│
 ├── ml/
 │   ├── data.py
-│   ├── model.py
-│
+│   └── model.py
 ├── scripts/
 │   └── explore_data.py
-│
-├── main.py
-├── train_model.py
-├── test_ml.py
-│
 ├── model/
 │   ├── model.pkl
 │   └── encoder.pkl
-│
-├── .github/workflows/
-│   └── python-app.yml
-│
+├── .github/
+│   └── workflows/
+│       └── python-app.yml
+├── main.py
+├── train_model.py
+├── test_ml.py
 └── README.md
 
 
