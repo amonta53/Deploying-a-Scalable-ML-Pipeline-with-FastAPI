@@ -83,6 +83,13 @@ repo/
 ├── ml/
 │   ├── data.py
 │   └── model.py
+├── model/
+│   ├── encoder.pkl
+│   ├── lb.pkl
+│   ├── model.pkl
+├── screenshots/
+│   └── continuous_integration.png
+│   └── unit_test.png
 ├── scripts/
 │   └── explore_data.py
 ├── model/
@@ -91,12 +98,14 @@ repo/
 ├── .github/
 │   └── workflows/
 │       └── python-app.yml
+├── local_api.py
 ├── main.py
-├── train_model.py
+├── model_card.md
+├── README.md
+├── slice_output.txt
 ├── test_ml.py
-└── README.md
+└── train_model.py
 ```
-
 
 ## Machine Learning Pipeline
 
@@ -207,7 +216,7 @@ Lint the code:
     flake8
 
 ## Model Card
-A model card describing training data, evaluation metrics, and ethical considerations is included in this repository.
+A model card describing training data, evaluation metrics, and ethical considerations is included in this repository.  See the full model documentation in the [Model Card](model_card.md).
 
 
 ## Future Improvements
