@@ -1,3 +1,17 @@
+# ---------------------------------------------------------------------
+# Script: scripts.explore_data
+# Lightweight exploratory analysis for the census dataset.
+#
+# This script is used during development to inspect dataset structure,
+# identify missing values, check feature distributions, and detect
+# potential data quality issues before building the ML pipeline.
+#
+# Responsibilities include:
+# - loading the raw dataset
+# - profiling dataset structure
+# - identifying placeholder missing values
+# - examining feature distributions
+# ---------------------------------------------------------------------
 from pathlib import Path
 import pandas as pd
 

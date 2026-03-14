@@ -1,3 +1,19 @@
+# ---------------------------------------------------------------------
+# Script: train_model.py
+# Training entrypoint for the machine learning pipeline.
+#
+# This script orchestrates the full training workflow. It loads the
+# census dataset, preprocesses features using shared utilities,
+# trains the model, evaluates performance, and saves the trained
+# artifacts for later use by the API service.
+#
+# Responsibilities include:
+# - loading the dataset
+# - preprocessing features
+# - training the machine learning model
+# - evaluating model performance
+# - saving model artifacts for deployment
+# ---------------------------------------------------------------------
 import os
 
 import pandas as pd

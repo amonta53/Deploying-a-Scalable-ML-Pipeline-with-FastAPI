@@ -213,6 +213,7 @@ A model card describing training data, evaluation metrics, and ethical considera
 ## Future Improvements
 Potential enhancements include:
 
+    - implementing automated hyperparameter tuning (e.g., GridSearchCV or RandomizedSearchCV) to systematically search for optimal model parameters rather than relying on a baseline configuration
     - automated model retraining pipeline
     - improved feature engineering
     - model explainability tools

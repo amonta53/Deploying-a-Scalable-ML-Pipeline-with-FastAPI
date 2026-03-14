@@ -1,3 +1,18 @@
+# ---------------------------------------------------------------------
+# Module: ml.data
+# Data preprocessing utilities used throughout the ML pipeline.
+#
+# This module is responsible for preparing raw census data for model
+# training and inference. It handles feature engineering steps such as
+# categorical encoding and label binarization so the model receives
+# consistent input during both training and prediction.
+#
+# Responsibilities include:
+# - cleaning and preparing raw dataset fields
+# - encoding categorical features
+# - separating features and labels
+# - ensuring consistent preprocessing during training and inference
+# ---------------------------------------------------------------------
 import numpy as np
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 
