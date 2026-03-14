@@ -76,7 +76,8 @@ These are handled programmatically during loading using skipinitialspace=True ra
 the raw dataset file.
 
 ## Project Structure
-Deploying-a-Scalable-ML-Pipeline-with-FastAPI/
+```text
+repo/
 ├── data/
 │   └── census.csv
 ├── ml/
@@ -94,6 +95,7 @@ Deploying-a-Scalable-ML-Pipeline-with-FastAPI/
 ├── train_model.py
 ├── test_ml.py
 └── README.md
+```
 
 
 ## Machine Learning Pipeline
