@@ -154,6 +154,7 @@ def performance_on_categorical_slice(
     slice_metrics = {
         "column_name": column_name,
         "slice_value": slice_value,
+        "count": len(slice_df),
         "precision": precision,
         "recall": recall,
         "fbeta": fbeta,
